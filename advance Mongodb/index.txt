@@ -1,0 +1,2068 @@
+> db.users.count()
+500
+> db.user.find({}).pertty()
+uncaught exception: TypeError: db.user.find(...).pertty is not a function :
+@(shell):1:1
+> db.users.find({})
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66436"), "id" : 1, "Movie_name" : "Last Winter, The", " Movie_genre" : "Horror", "production_year" : 2005, "budget" : "$17114.16" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66437"), "id" : 2, "Movie_name" : "Yakuza, The", " Movie_genre" : "Drama", "production_year" : 2009, "budget" : "$11577.82" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66438"), "id" : 3, "Movie_name" : "Emergency Squad", " Movie_genre" : "Action|Thriller", "production_year" : 2007, "budget" : "$10406.44" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66439"), "id" : 4, "Movie_name" : "Coupe de Ville", " Movie_genre" : "Comedy|Drama", "production_year" : 1992, "budget" : "$13240.52" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6643a"), "id" : 5, "Movie_name" : "In Bed (En la cama)", " Movie_genre" : "Drama", "production_year" : 2001, "budget" : "$10581.89" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6643b"), "id" : 6, "Movie_name" : "Let the Bullets Fly", " Movie_genre" : "Action|Comedy", "production_year" : 2008, "budget" : "$13106.39" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6643c"), "id" : 7, "Movie_name" : "Steamboy (Suchîmubôi)", " Movie_genre" : "Action|Animation|Drama|Sci-Fi", "production_year" : 2009, "budget" : "$12441.11" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6643d"), "id" : 8, "Movie_name" : "It Should Happen to You", " Movie_genre" : "Comedy|Romance", "production_year" : 2009, "budget" : "$14889.75" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6643e"), "id" : 9, "Movie_name" : "Analyze This", " Movie_genre" : "Comedy", "production_year" : 2004, "budget" : "$13740.74" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6643f"), "id" : 10, "Movie_name" : "Clay Bird, The (Matir moina)", " Movie_genre" : "Drama", "production_year" : 1995, "budget" : "$16009.96" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66440"), "id" : 11, "Movie_name" : "Adrenaline Drive (Adorenarin doraibu)", " Movie_genre" : "Comedy", "production_year" : 1988, "budget" : "$9976.33" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66441"), "id" : 12, "Movie_name" : "Flyboys", " Movie_genre" : "Action|Adventure|Drama|War", "production_year" : 2006, "budget" : "$10822.70" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66442"), "id" : 13, "Movie_name" : "Little Thief, The (Le petit voleur)", " Movie_genre" : "Drama", "production_year" : 2003, "budget" : "$10034.86" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66443"), "id" : 14, "Movie_name" : "Number Seventeen (a.k.a. Number 17)", " Movie_genre" : "Thriller", "production_year" : 2002, "budget" : "$10725.90" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66444"), "id" : 15, "Movie_name" : "Galaxy Invader, The", " Movie_genre" : "Sci-Fi", "production_year" : 2009, "budget" : "$12506.63" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66445"), "id" : 16, "Movie_name" : "Guess Who", " Movie_genre" : "Comedy|Romance", "production_year" : 2003, "budget" : "$10558.75" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66446"), "id" : 17, "Movie_name" : "Foxes", " Movie_genre" : "Drama", "production_year" : 2011, "budget" : "$13994.74" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66447"), "id" : 18, "Movie_name" : "Takedown", " Movie_genre" : "Action|Thriller", "production_year" : 1984, "budget" : "$16113.07" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66448"), "id" : 19, "Movie_name" : "A Grain of Truth", " Movie_genre" : "Thriller", "production_year" : 2007, "budget" : "$19078.42" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66449"), "id" : 20, "Movie_name" : "Feast of Love", " Movie_genre" : "Drama|Romance", "production_year" : 1993, "budget" : "$19870.72" }
+Type "it" for more
+> db.users.find({}).pretty()
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66436"),
+        "id" : 1,
+        "Movie_name" : "Last Winter, The",
+        " Movie_genre" : "Horror",
+        "production_year" : 2005,
+        "budget" : "$17114.16"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66437"),
+        "id" : 2,
+        "Movie_name" : "Yakuza, The",
+        " Movie_genre" : "Drama",
+        "production_year" : 2009,
+        "budget" : "$11577.82"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66438"),
+        "id" : 3,
+        "Movie_name" : "Emergency Squad",
+        " Movie_genre" : "Action|Thriller",
+        "production_year" : 2007,
+        "budget" : "$10406.44"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66439"),
+        "id" : 4,
+        "Movie_name" : "Coupe de Ville",
+        " Movie_genre" : "Comedy|Drama",
+        "production_year" : 1992,
+        "budget" : "$13240.52"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643a"),
+        "id" : 5,
+        "Movie_name" : "In Bed (En la cama)",
+        " Movie_genre" : "Drama",
+        "production_year" : 2001,
+        "budget" : "$10581.89"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643b"),
+        "id" : 6,
+        "Movie_name" : "Let the Bullets Fly",
+        " Movie_genre" : "Action|Comedy",
+        "production_year" : 2008,
+        "budget" : "$13106.39"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643c"),
+        "id" : 7,
+        "Movie_name" : "Steamboy (Suchîmubôi)",
+        " Movie_genre" : "Action|Animation|Drama|Sci-Fi",
+        "production_year" : 2009,
+        "budget" : "$12441.11"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643d"),
+        "id" : 8,
+        "Movie_name" : "It Should Happen to You",
+        " Movie_genre" : "Comedy|Romance",
+        "production_year" : 2009,
+        "budget" : "$14889.75"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643e"),
+        "id" : 9,
+        "Movie_name" : "Analyze This",
+        " Movie_genre" : "Comedy",
+        "production_year" : 2004,
+        "budget" : "$13740.74"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643f"),
+        "id" : 10,
+        "Movie_name" : "Clay Bird, The (Matir moina)",
+        " Movie_genre" : "Drama",
+        "production_year" : 1995,
+        "budget" : "$16009.96"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66440"),
+        "id" : 11,
+        "Movie_name" : "Adrenaline Drive (Adorenarin doraibu)",
+        " Movie_genre" : "Comedy",
+        "production_year" : 1988,
+        "budget" : "$9976.33"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66441"),
+        "id" : 12,
+        "Movie_name" : "Flyboys",
+        " Movie_genre" : "Action|Adventure|Drama|War",
+        "production_year" : 2006,
+        "budget" : "$10822.70"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66442"),
+        "id" : 13,
+        "Movie_name" : "Little Thief, The (Le petit voleur)",
+        " Movie_genre" : "Drama",
+        "production_year" : 2003,
+        "budget" : "$10034.86"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66443"),
+        "id" : 14,
+        "Movie_name" : "Number Seventeen (a.k.a. Number 17)",
+        " Movie_genre" : "Thriller",
+        "production_year" : 2002,
+        "budget" : "$10725.90"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66444"),
+        "id" : 15,
+        "Movie_name" : "Galaxy Invader, The",
+        " Movie_genre" : "Sci-Fi",
+        "production_year" : 2009,
+        "budget" : "$12506.63"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66445"),
+        "id" : 16,
+        "Movie_name" : "Guess Who",
+        " Movie_genre" : "Comedy|Romance",
+        "production_year" : 2003,
+        "budget" : "$10558.75"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66446"),
+        "id" : 17,
+        "Movie_name" : "Foxes",
+        " Movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : "$13994.74"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66447"),
+        "id" : 18,
+        "Movie_name" : "Takedown",
+        " Movie_genre" : "Action|Thriller",
+        "production_year" : 1984,
+        "budget" : "$16113.07"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66448"),
+        "id" : 19,
+        "Movie_name" : "A Grain of Truth",
+        " Movie_genre" : "Thriller",
+        "production_year" : 2007,
+        "budget" : "$19078.42"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66449"),
+        "id" : 20,
+        "Movie_name" : "Feast of Love",
+        " Movie_genre" : "Drama|Romance",
+        "production_year" : 1993,
+        "budget" : "$19870.72"
+}
+Type "it" for more
+> db.users.find({Movie_name":"Takedown"})
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:25
+> db.users.find({"Movie_name":"Takedown"})
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66447"), "id" : 18, "Movie_name" : "Takedown", " Movie_genre" : "Action|Thriller", "production_year" : 1984, "budget" : "$16113.07" }
+> db.users.find({"Movie_name":"movie_name"})
+> db.users.find({"Movie_name":{$eq:"takedown"}})
+> db.users.find({Movie_name:{$eq:"takedown"}})
+> db.users.find({Movie_name:{$eq:"Takedown"}})
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66447"), "id" : 18, "Movie_name" : "Takedown", " Movie_genre" : "Action|Thriller", "production_year" : 1984, "budget" : "$16113.07" }
+> db.users.find({Movie_name:{$ne:"Takedown"}})
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66436"), "id" : 1, "Movie_name" : "Last Winter, The", " Movie_genre" : "Horror", "production_year" : 2005, "budget" : "$17114.16" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66437"), "id" : 2, "Movie_name" : "Yakuza, The", " Movie_genre" : "Drama", "production_year" : 2009, "budget" : "$11577.82" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66438"), "id" : 3, "Movie_name" : "Emergency Squad", " Movie_genre" : "Action|Thriller", "production_year" : 2007, "budget" : "$10406.44" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66439"), "id" : 4, "Movie_name" : "Coupe de Ville", " Movie_genre" : "Comedy|Drama", "production_year" : 1992, "budget" : "$13240.52" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6643a"), "id" : 5, "Movie_name" : "In Bed (En la cama)", " Movie_genre" : "Drama", "production_year" : 2001, "budget" : "$10581.89" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6643b"), "id" : 6, "Movie_name" : "Let the Bullets Fly", " Movie_genre" : "Action|Comedy", "production_year" : 2008, "budget" : "$13106.39" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6643c"), "id" : 7, "Movie_name" : "Steamboy (Suchîmubôi)", " Movie_genre" : "Action|Animation|Drama|Sci-Fi", "production_year" : 2009, "budget" : "$12441.11" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6643d"), "id" : 8, "Movie_name" : "It Should Happen to You", " Movie_genre" : "Comedy|Romance", "production_year" : 2009, "budget" : "$14889.75" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6643e"), "id" : 9, "Movie_name" : "Analyze This", " Movie_genre" : "Comedy", "production_year" : 2004, "budget" : "$13740.74" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6643f"), "id" : 10, "Movie_name" : "Clay Bird, The (Matir moina)", " Movie_genre" : "Drama", "production_year" : 1995, "budget" : "$16009.96" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66440"), "id" : 11, "Movie_name" : "Adrenaline Drive (Adorenarin doraibu)", " Movie_genre" : "Comedy", "production_year" : 1988, "budget" : "$9976.33" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66441"), "id" : 12, "Movie_name" : "Flyboys", " Movie_genre" : "Action|Adventure|Drama|War", "production_year" : 2006, "budget" : "$10822.70" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66442"), "id" : 13, "Movie_name" : "Little Thief, The (Le petit voleur)", " Movie_genre" : "Drama", "production_year" : 2003, "budget" : "$10034.86" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66443"), "id" : 14, "Movie_name" : "Number Seventeen (a.k.a. Number 17)", " Movie_genre" : "Thriller", "production_year" : 2002, "budget" : "$10725.90" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66444"), "id" : 15, "Movie_name" : "Galaxy Invader, The", " Movie_genre" : "Sci-Fi", "production_year" : 2009, "budget" : "$12506.63" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66445"), "id" : 16, "Movie_name" : "Guess Who", " Movie_genre" : "Comedy|Romance", "production_year" : 2003, "budget" : "$10558.75" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66446"), "id" : 17, "Movie_name" : "Foxes", " Movie_genre" : "Drama", "production_year" : 2011, "budget" : "$13994.74" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66448"), "id" : 19, "Movie_name" : "A Grain of Truth", " Movie_genre" : "Thriller", "production_year" : 2007, "budget" : "$19078.42" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66449"), "id" : 20, "Movie_name" : "Feast of Love", " Movie_genre" : "Drama|Romance", "production_year" : 1993, "budget" : "$19870.72" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6644a"), "id" : 21, "Movie_name" : "Underworld", " Movie_genre" : "Crime|Drama|Film-Noir", "production_year" : 1996, "budget" : "$10404.37" }
+Type "it" for more
+> db.users.findOne({Movie_name:{$ne:"Takedown"}}).pretty
+> db.users.findOne({Movie_name:{$ne:"Takedown"}}).pretty()
+uncaught exception: TypeError: db.users.findOne(...).pretty is not a function :
+@(shell):1:1
+> db.users.findOne({"Movie_name":"Takedown"}).pretty()
+uncaught exception: TypeError: db.users.findOne(...).pretty is not a function :
+@(shell):1:1
+> db.users.findOne({}).pretty()
+uncaught exception: TypeError: db.users.findOne(...).pretty is not a function :
+@(shell):1:1
+> db.users.findOne({})
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66436"),
+        "id" : 1,
+        "Movie_name" : "Last Winter, The",
+        " Movie_genre" : "Horror",
+        "production_year" : 2005,
+        "budget" : "$17114.16"
+}
+> db.user.find({"budget":{$gte:"$17114.16"}})
+> db.user.find({"budget":{$gt:"$17114.16"}})
+> db.users.find({"budget":{$gt:"$17114.16"}})
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66440"), "id" : 11, "Movie_name" : "Adrenaline Drive (Adorenarin doraibu)", " Movie_genre" : "Comedy", "production_year" : 1988, "budget" : "$9976.33" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66448"), "id" : 19, "Movie_name" : "A Grain of Truth", " Movie_genre" : "Thriller", "production_year" : 2007, "budget" : "$19078.42" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66449"), "id" : 20, "Movie_name" : "Feast of Love", " Movie_genre" : "Drama|Romance", "production_year" : 1993, "budget" : "$19870.72" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6644b"), "id" : 22, "Movie_name" : "Nymphomaniac: Volume II", " Movie_genre" : "Drama|Mystery", "production_year" : 1992, "budget" : "$18429.43" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6644c"), "id" : 23, "Movie_name" : "The Duke of Burgundy", " Movie_genre" : "Drama", "production_year" : 1994, "budget" : "$9844.04" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66452"), "id" : 29, "Movie_name" : "Jacqueline Susann's Once Is Not Enough", " Movie_genre" : "Drama|Romance", "production_year" : 2009, "budget" : "$17785.87" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66453"), "id" : 30, "Movie_name" : "Ffolkes", " Movie_genre" : "Action|Adventure|Thriller", "production_year" : 2004, "budget" : "$17448.32" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66457"), "id" : 34, "Movie_name" : "Fire", " Movie_genre" : "Drama", "production_year" : 1998, "budget" : "$18593.65" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6645a"), "id" : 37, "Movie_name" : "Corpo Celeste", " Movie_genre" : "Drama", "production_year" : 1989, "budget" : "$19874.82" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6645f"), "id" : 42, "Movie_name" : "Dirty Shame, A", " Movie_genre" : "Comedy", "production_year" : 2001, "budget" : "$18089.90" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66460"), "id" : 43, "Movie_name" : "Age of the Earth, The (A Idade da Terra)", " Movie_genre" : "(no genres listed)", "production_year" : 2007, "budget" : "$19431.12" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66463"), "id" : 46, "Movie_name" : "Fallen Angels (Duo luo tian shi)", " Movie_genre" : "Drama|Romance", "production_year" : 1994, "budget" : "$18777.55" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66465"), "id" : 48, "Movie_name" : "Girl Walks Into a Bar", " Movie_genre" : "Comedy|Drama|Fantasy", "production_year" : 2008, "budget" : "$9282.70" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66467"), "id" : 50, "Movie_name" : "Be Cool", " Movie_genre" : "Comedy|Crime|Musical", "production_year" : 2010, "budget" : "$18017.45" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6646d"), "id" : 56, "Movie_name" : "First Monday in October", " Movie_genre" : "Comedy|Drama", "production_year" : 2006, "budget" : "$9718.03" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66473"), "id" : 62, "Movie_name" : "Heatstroke", " Movie_genre" : "Thriller", "production_year" : 1994, "budget" : "$9370.16" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6647d"), "id" : 72, "Movie_name" : "She-Devil", " Movie_genre" : "Comedy", "production_year" : 2003, "budget" : "$19037.60" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6647e"), "id" : 73, "Movie_name" : "Rat Race", " Movie_genre" : "Comedy", "production_year" : 2005, "budget" : "$9002.60" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66482"), "id" : 77, "Movie_name" : "Squanto: A Warrior's Tale", " Movie_genre" : "Adventure|Drama", "production_year" : 1992, "budget" : "$18995.44" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66484"), "id" : 79, "Movie_name" : "Orphan", " Movie_genre" : "Drama|Horror|Mystery|Thriller", "production_year" : 1995, "budget" : "$17656.00" }
+Type "it" for more
+> db.users.find({"budget":{$gt:"$17114.16"}}).pretty()
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66440"),
+        "id" : 11,
+        "Movie_name" : "Adrenaline Drive (Adorenarin doraibu)",
+        " Movie_genre" : "Comedy",
+        "production_year" : 1988,
+        "budget" : "$9976.33"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66448"),
+        "id" : 19,
+        "Movie_name" : "A Grain of Truth",
+        " Movie_genre" : "Thriller",
+        "production_year" : 2007,
+        "budget" : "$19078.42"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66449"),
+        "id" : 20,
+        "Movie_name" : "Feast of Love",
+        " Movie_genre" : "Drama|Romance",
+        "production_year" : 1993,
+        "budget" : "$19870.72"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6644b"),
+        "id" : 22,
+        "Movie_name" : "Nymphomaniac: Volume II",
+        " Movie_genre" : "Drama|Mystery",
+        "production_year" : 1992,
+        "budget" : "$18429.43"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6644c"),
+        "id" : 23,
+        "Movie_name" : "The Duke of Burgundy",
+        " Movie_genre" : "Drama",
+        "production_year" : 1994,
+        "budget" : "$9844.04"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66452"),
+        "id" : 29,
+        "Movie_name" : "Jacqueline Susann's Once Is Not Enough",
+        " Movie_genre" : "Drama|Romance",
+        "production_year" : 2009,
+        "budget" : "$17785.87"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66453"),
+        "id" : 30,
+        "Movie_name" : "Ffolkes",
+        " Movie_genre" : "Action|Adventure|Thriller",
+        "production_year" : 2004,
+        "budget" : "$17448.32"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66457"),
+        "id" : 34,
+        "Movie_name" : "Fire",
+        " Movie_genre" : "Drama",
+        "production_year" : 1998,
+        "budget" : "$18593.65"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6645a"),
+        "id" : 37,
+        "Movie_name" : "Corpo Celeste",
+        " Movie_genre" : "Drama",
+        "production_year" : 1989,
+        "budget" : "$19874.82"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6645f"),
+        "id" : 42,
+        "Movie_name" : "Dirty Shame, A",
+        " Movie_genre" : "Comedy",
+        "production_year" : 2001,
+        "budget" : "$18089.90"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66460"),
+        "id" : 43,
+        "Movie_name" : "Age of the Earth, The (A Idade da Terra)",
+        " Movie_genre" : "(no genres listed)",
+        "production_year" : 2007,
+        "budget" : "$19431.12"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66463"),
+        "id" : 46,
+        "Movie_name" : "Fallen Angels (Duo luo tian shi)",
+        " Movie_genre" : "Drama|Romance",
+        "production_year" : 1994,
+        "budget" : "$18777.55"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66465"),
+        "id" : 48,
+        "Movie_name" : "Girl Walks Into a Bar",
+        " Movie_genre" : "Comedy|Drama|Fantasy",
+        "production_year" : 2008,
+        "budget" : "$9282.70"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66467"),
+        "id" : 50,
+        "Movie_name" : "Be Cool",
+        " Movie_genre" : "Comedy|Crime|Musical",
+        "production_year" : 2010,
+        "budget" : "$18017.45"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6646d"),
+        "id" : 56,
+        "Movie_name" : "First Monday in October",
+        " Movie_genre" : "Comedy|Drama",
+        "production_year" : 2006,
+        "budget" : "$9718.03"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66473"),
+        "id" : 62,
+        "Movie_name" : "Heatstroke",
+        " Movie_genre" : "Thriller",
+        "production_year" : 1994,
+        "budget" : "$9370.16"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6647d"),
+        "id" : 72,
+        "Movie_name" : "She-Devil",
+        " Movie_genre" : "Comedy",
+        "production_year" : 2003,
+        "budget" : "$19037.60"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6647e"),
+        "id" : 73,
+        "Movie_name" : "Rat Race",
+        " Movie_genre" : "Comedy",
+        "production_year" : 2005,
+        "budget" : "$9002.60"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66482"),
+        "id" : 77,
+        "Movie_name" : "Squanto: A Warrior's Tale",
+        " Movie_genre" : "Adventure|Drama",
+        "production_year" : 1992,
+        "budget" : "$18995.44"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66484"),
+        "id" : 79,
+        "Movie_name" : "Orphan",
+        " Movie_genre" : "Drama|Horror|Mystery|Thriller",
+        "production_year" : 1995,
+        "budget" : "$17656.00"
+}
+Type "it" for more
+> db.users.find({"budget":{$gte:"$17114.16"}}).pretty()
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66436"),
+        "id" : 1,
+        "Movie_name" : "Last Winter, The",
+        " Movie_genre" : "Horror",
+        "production_year" : 2005,
+        "budget" : "$17114.16"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66440"),
+        "id" : 11,
+        "Movie_name" : "Adrenaline Drive (Adorenarin doraibu)",
+        " Movie_genre" : "Comedy",
+        "production_year" : 1988,
+        "budget" : "$9976.33"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66448"),
+        "id" : 19,
+        "Movie_name" : "A Grain of Truth",
+        " Movie_genre" : "Thriller",
+        "production_year" : 2007,
+        "budget" : "$19078.42"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66449"),
+        "id" : 20,
+        "Movie_name" : "Feast of Love",
+        " Movie_genre" : "Drama|Romance",
+        "production_year" : 1993,
+        "budget" : "$19870.72"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6644b"),
+        "id" : 22,
+        "Movie_name" : "Nymphomaniac: Volume II",
+        " Movie_genre" : "Drama|Mystery",
+        "production_year" : 1992,
+        "budget" : "$18429.43"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6644c"),
+        "id" : 23,
+        "Movie_name" : "The Duke of Burgundy",
+        " Movie_genre" : "Drama",
+        "production_year" : 1994,
+        "budget" : "$9844.04"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66452"),
+        "id" : 29,
+        "Movie_name" : "Jacqueline Susann's Once Is Not Enough",
+        " Movie_genre" : "Drama|Romance",
+        "production_year" : 2009,
+        "budget" : "$17785.87"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66453"),
+        "id" : 30,
+        "Movie_name" : "Ffolkes",
+        " Movie_genre" : "Action|Adventure|Thriller",
+        "production_year" : 2004,
+        "budget" : "$17448.32"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66457"),
+        "id" : 34,
+        "Movie_name" : "Fire",
+        " Movie_genre" : "Drama",
+        "production_year" : 1998,
+        "budget" : "$18593.65"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6645a"),
+        "id" : 37,
+        "Movie_name" : "Corpo Celeste",
+        " Movie_genre" : "Drama",
+        "production_year" : 1989,
+        "budget" : "$19874.82"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6645f"),
+        "id" : 42,
+        "Movie_name" : "Dirty Shame, A",
+        " Movie_genre" : "Comedy",
+        "production_year" : 2001,
+        "budget" : "$18089.90"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66460"),
+        "id" : 43,
+        "Movie_name" : "Age of the Earth, The (A Idade da Terra)",
+        " Movie_genre" : "(no genres listed)",
+        "production_year" : 2007,
+        "budget" : "$19431.12"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66463"),
+        "id" : 46,
+        "Movie_name" : "Fallen Angels (Duo luo tian shi)",
+        " Movie_genre" : "Drama|Romance",
+        "production_year" : 1994,
+        "budget" : "$18777.55"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66465"),
+        "id" : 48,
+        "Movie_name" : "Girl Walks Into a Bar",
+        " Movie_genre" : "Comedy|Drama|Fantasy",
+        "production_year" : 2008,
+        "budget" : "$9282.70"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66467"),
+        "id" : 50,
+        "Movie_name" : "Be Cool",
+        " Movie_genre" : "Comedy|Crime|Musical",
+        "production_year" : 2010,
+        "budget" : "$18017.45"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6646d"),
+        "id" : 56,
+        "Movie_name" : "First Monday in October",
+        " Movie_genre" : "Comedy|Drama",
+        "production_year" : 2006,
+        "budget" : "$9718.03"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66473"),
+        "id" : 62,
+        "Movie_name" : "Heatstroke",
+        " Movie_genre" : "Thriller",
+        "production_year" : 1994,
+        "budget" : "$9370.16"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6647d"),
+        "id" : 72,
+        "Movie_name" : "She-Devil",
+        " Movie_genre" : "Comedy",
+        "production_year" : 2003,
+        "budget" : "$19037.60"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6647e"),
+        "id" : 73,
+        "Movie_name" : "Rat Race",
+        " Movie_genre" : "Comedy",
+        "production_year" : 2005,
+        "budget" : "$9002.60"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66482"),
+        "id" : 77,
+        "Movie_name" : "Squanto: A Warrior's Tale",
+        " Movie_genre" : "Adventure|Drama",
+        "production_year" : 1992,
+        "budget" : "$18995.44"
+}
+Type "it" for more
+> db.users.find({"budget":{$lt:"$17114.16"}}).pretty()
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66437"),
+        "id" : 2,
+        "Movie_name" : "Yakuza, The",
+        " Movie_genre" : "Drama",
+        "production_year" : 2009,
+        "budget" : "$11577.82"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66438"),
+        "id" : 3,
+        "Movie_name" : "Emergency Squad",
+        " Movie_genre" : "Action|Thriller",
+        "production_year" : 2007,
+        "budget" : "$10406.44"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66439"),
+        "id" : 4,
+        "Movie_name" : "Coupe de Ville",
+        " Movie_genre" : "Comedy|Drama",
+        "production_year" : 1992,
+        "budget" : "$13240.52"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643a"),
+        "id" : 5,
+        "Movie_name" : "In Bed (En la cama)",
+        " Movie_genre" : "Drama",
+        "production_year" : 2001,
+        "budget" : "$10581.89"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643b"),
+        "id" : 6,
+        "Movie_name" : "Let the Bullets Fly",
+        " Movie_genre" : "Action|Comedy",
+        "production_year" : 2008,
+        "budget" : "$13106.39"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643c"),
+        "id" : 7,
+        "Movie_name" : "Steamboy (Suchîmubôi)",
+        " Movie_genre" : "Action|Animation|Drama|Sci-Fi",
+        "production_year" : 2009,
+        "budget" : "$12441.11"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643d"),
+        "id" : 8,
+        "Movie_name" : "It Should Happen to You",
+        " Movie_genre" : "Comedy|Romance",
+        "production_year" : 2009,
+        "budget" : "$14889.75"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643e"),
+        "id" : 9,
+        "Movie_name" : "Analyze This",
+        " Movie_genre" : "Comedy",
+        "production_year" : 2004,
+        "budget" : "$13740.74"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643f"),
+        "id" : 10,
+        "Movie_name" : "Clay Bird, The (Matir moina)",
+        " Movie_genre" : "Drama",
+        "production_year" : 1995,
+        "budget" : "$16009.96"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66441"),
+        "id" : 12,
+        "Movie_name" : "Flyboys",
+        " Movie_genre" : "Action|Adventure|Drama|War",
+        "production_year" : 2006,
+        "budget" : "$10822.70"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66442"),
+        "id" : 13,
+        "Movie_name" : "Little Thief, The (Le petit voleur)",
+        " Movie_genre" : "Drama",
+        "production_year" : 2003,
+        "budget" : "$10034.86"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66443"),
+        "id" : 14,
+        "Movie_name" : "Number Seventeen (a.k.a. Number 17)",
+        " Movie_genre" : "Thriller",
+        "production_year" : 2002,
+        "budget" : "$10725.90"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66444"),
+        "id" : 15,
+        "Movie_name" : "Galaxy Invader, The",
+        " Movie_genre" : "Sci-Fi",
+        "production_year" : 2009,
+        "budget" : "$12506.63"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66445"),
+        "id" : 16,
+        "Movie_name" : "Guess Who",
+        " Movie_genre" : "Comedy|Romance",
+        "production_year" : 2003,
+        "budget" : "$10558.75"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66446"),
+        "id" : 17,
+        "Movie_name" : "Foxes",
+        " Movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : "$13994.74"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66447"),
+        "id" : 18,
+        "Movie_name" : "Takedown",
+        " Movie_genre" : "Action|Thriller",
+        "production_year" : 1984,
+        "budget" : "$16113.07"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6644a"),
+        "id" : 21,
+        "Movie_name" : "Underworld",
+        " Movie_genre" : "Crime|Drama|Film-Noir",
+        "production_year" : 1996,
+        "budget" : "$10404.37"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6644d"),
+        "id" : 24,
+        "Movie_name" : "Men with Guns",
+        " Movie_genre" : "Action|Drama",
+        "production_year" : 2000,
+        "budget" : "$10459.35"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6644e"),
+        "id" : 25,
+        "Movie_name" : "Once Upon a Scoundrel",
+        " Movie_genre" : "Comedy",
+        "production_year" : 1999,
+        "budget" : "$13426.51"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6644f"),
+        "id" : 26,
+        "Movie_name" : "Live Free or Die",
+        " Movie_genre" : "Comedy|Crime",
+        "production_year" : 2001,
+        "budget" : "$15001.54"
+}
+Type "it" for more
+> db.users.find({"budget":{$lte:"$17114.16"}}).pretty()
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66436"),
+        "id" : 1,
+        "Movie_name" : "Last Winter, The",
+        " Movie_genre" : "Horror",
+        "production_year" : 2005,
+        "budget" : "$17114.16"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66437"),
+        "id" : 2,
+        "Movie_name" : "Yakuza, The",
+        " Movie_genre" : "Drama",
+        "production_year" : 2009,
+        "budget" : "$11577.82"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66438"),
+        "id" : 3,
+        "Movie_name" : "Emergency Squad",
+        " Movie_genre" : "Action|Thriller",
+        "production_year" : 2007,
+        "budget" : "$10406.44"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66439"),
+        "id" : 4,
+        "Movie_name" : "Coupe de Ville",
+        " Movie_genre" : "Comedy|Drama",
+        "production_year" : 1992,
+        "budget" : "$13240.52"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643a"),
+        "id" : 5,
+        "Movie_name" : "In Bed (En la cama)",
+        " Movie_genre" : "Drama",
+        "production_year" : 2001,
+        "budget" : "$10581.89"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643b"),
+        "id" : 6,
+        "Movie_name" : "Let the Bullets Fly",
+        " Movie_genre" : "Action|Comedy",
+        "production_year" : 2008,
+        "budget" : "$13106.39"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643c"),
+        "id" : 7,
+        "Movie_name" : "Steamboy (Suchîmubôi)",
+        " Movie_genre" : "Action|Animation|Drama|Sci-Fi",
+        "production_year" : 2009,
+        "budget" : "$12441.11"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643d"),
+        "id" : 8,
+        "Movie_name" : "It Should Happen to You",
+        " Movie_genre" : "Comedy|Romance",
+        "production_year" : 2009,
+        "budget" : "$14889.75"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643e"),
+        "id" : 9,
+        "Movie_name" : "Analyze This",
+        " Movie_genre" : "Comedy",
+        "production_year" : 2004,
+        "budget" : "$13740.74"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643f"),
+        "id" : 10,
+        "Movie_name" : "Clay Bird, The (Matir moina)",
+        " Movie_genre" : "Drama",
+        "production_year" : 1995,
+        "budget" : "$16009.96"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66441"),
+        "id" : 12,
+        "Movie_name" : "Flyboys",
+        " Movie_genre" : "Action|Adventure|Drama|War",
+        "production_year" : 2006,
+        "budget" : "$10822.70"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66442"),
+        "id" : 13,
+        "Movie_name" : "Little Thief, The (Le petit voleur)",
+        " Movie_genre" : "Drama",
+        "production_year" : 2003,
+        "budget" : "$10034.86"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66443"),
+        "id" : 14,
+        "Movie_name" : "Number Seventeen (a.k.a. Number 17)",
+        " Movie_genre" : "Thriller",
+        "production_year" : 2002,
+        "budget" : "$10725.90"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66444"),
+        "id" : 15,
+        "Movie_name" : "Galaxy Invader, The",
+        " Movie_genre" : "Sci-Fi",
+        "production_year" : 2009,
+        "budget" : "$12506.63"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66445"),
+        "id" : 16,
+        "Movie_name" : "Guess Who",
+        " Movie_genre" : "Comedy|Romance",
+        "production_year" : 2003,
+        "budget" : "$10558.75"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66446"),
+        "id" : 17,
+        "Movie_name" : "Foxes",
+        " Movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : "$13994.74"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66447"),
+        "id" : 18,
+        "Movie_name" : "Takedown",
+        " Movie_genre" : "Action|Thriller",
+        "production_year" : 1984,
+        "budget" : "$16113.07"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6644a"),
+        "id" : 21,
+        "Movie_name" : "Underworld",
+        " Movie_genre" : "Crime|Drama|Film-Noir",
+        "production_year" : 1996,
+        "budget" : "$10404.37"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6644d"),
+        "id" : 24,
+        "Movie_name" : "Men with Guns",
+        " Movie_genre" : "Action|Drama",
+        "production_year" : 2000,
+        "budget" : "$10459.35"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6644e"),
+        "id" : 25,
+        "Movie_name" : "Once Upon a Scoundrel",
+        " Movie_genre" : "Comedy",
+        "production_year" : 1999,
+        "budget" : "$13426.51"
+}
+Type "it" for more
+> db.users.find({$and:[{"production_year":{$gt:2000}},{"budget:"{$gt:10000}}]})
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:62
+> db.users.find({$and:[{"production_year":{$gt:2000}},{"budget":{$gt:10000}}]})
+> db.users.find({$and:[{"production_year":{$gt:2000}},{"budget":{$gt:10000}}]})
+>
+> db.users.find({$and:[{"production_year":{$gt:2000}},{"budget":{$gt:"$10000"}}]})
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66436"), "id" : 1, "Movie_name" : "Last Winter, The", " Movie_genre" : "Horror", "production_year" : 2005, "budget" : "$17114.16" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66437"), "id" : 2, "Movie_name" : "Yakuza, The", " Movie_genre" : "Drama", "production_year" : 2009, "budget" : "$11577.82" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66438"), "id" : 3, "Movie_name" : "Emergency Squad", " Movie_genre" : "Action|Thriller", "production_year" : 2007, "budget" : "$10406.44" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6643a"), "id" : 5, "Movie_name" : "In Bed (En la cama)", " Movie_genre" : "Drama", "production_year" : 2001, "budget" : "$10581.89" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6643b"), "id" : 6, "Movie_name" : "Let the Bullets Fly", " Movie_genre" : "Action|Comedy", "production_year" : 2008, "budget" : "$13106.39" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6643c"), "id" : 7, "Movie_name" : "Steamboy (Suchîmubôi)", " Movie_genre" : "Action|Animation|Drama|Sci-Fi", "production_year" : 2009, "budget" : "$12441.11" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6643d"), "id" : 8, "Movie_name" : "It Should Happen to You", " Movie_genre" : "Comedy|Romance", "production_year" : 2009, "budget" : "$14889.75" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6643e"), "id" : 9, "Movie_name" : "Analyze This", " Movie_genre" : "Comedy", "production_year" : 2004, "budget" : "$13740.74" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66441"), "id" : 12, "Movie_name" : "Flyboys", " Movie_genre" : "Action|Adventure|Drama|War", "production_year" : 2006, "budget" : "$10822.70" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66442"), "id" : 13, "Movie_name" : "Little Thief, The (Le petit voleur)", " Movie_genre" : "Drama", "production_year" : 2003, "budget" : "$10034.86" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66443"), "id" : 14, "Movie_name" : "Number Seventeen (a.k.a. Number 17)", " Movie_genre" : "Thriller", "production_year" : 2002, "budget" : "$10725.90" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66444"), "id" : 15, "Movie_name" : "Galaxy Invader, The", " Movie_genre" : "Sci-Fi", "production_year" : 2009, "budget" : "$12506.63" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66445"), "id" : 16, "Movie_name" : "Guess Who", " Movie_genre" : "Comedy|Romance", "production_year" : 2003, "budget" : "$10558.75" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66446"), "id" : 17, "Movie_name" : "Foxes", " Movie_genre" : "Drama", "production_year" : 2011, "budget" : "$13994.74" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66448"), "id" : 19, "Movie_name" : "A Grain of Truth", " Movie_genre" : "Thriller", "production_year" : 2007, "budget" : "$19078.42" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c6644f"), "id" : 26, "Movie_name" : "Live Free or Die", " Movie_genre" : "Comedy|Crime", "production_year" : 2001, "budget" : "$15001.54" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66451"), "id" : 28, "Movie_name" : "How High", " Movie_genre" : "Comedy", "production_year" : 2011, "budget" : "$11074.10" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66452"), "id" : 29, "Movie_name" : "Jacqueline Susann's Once Is Not Enough", " Movie_genre" : "Drama|Romance", "production_year" : 2009, "budget" : "$17785.87" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66453"), "id" : 30, "Movie_name" : "Ffolkes", " Movie_genre" : "Action|Adventure|Thriller", "production_year" : 2004, "budget" : "$17448.32" }
+{ "_id" : ObjectId("622908df6a6f3c4cd0c66454"), "id" : 31, "Movie_name" : "Louis C.K.: Shameless", " Movie_genre" : "Comedy", "production_year" : 2010, "budget" : "$10547.26" }
+Type "it" for more
+> db.users.find({$and:[{"production_year":{$gt:2000}},{"budget":{$gt:"$10000"}}]}).pretty()
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66436"),
+        "id" : 1,
+        "Movie_name" : "Last Winter, The",
+        " Movie_genre" : "Horror",
+        "production_year" : 2005,
+        "budget" : "$17114.16"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66437"),
+        "id" : 2,
+        "Movie_name" : "Yakuza, The",
+        " Movie_genre" : "Drama",
+        "production_year" : 2009,
+        "budget" : "$11577.82"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66438"),
+        "id" : 3,
+        "Movie_name" : "Emergency Squad",
+        " Movie_genre" : "Action|Thriller",
+        "production_year" : 2007,
+        "budget" : "$10406.44"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643a"),
+        "id" : 5,
+        "Movie_name" : "In Bed (En la cama)",
+        " Movie_genre" : "Drama",
+        "production_year" : 2001,
+        "budget" : "$10581.89"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643b"),
+        "id" : 6,
+        "Movie_name" : "Let the Bullets Fly",
+        " Movie_genre" : "Action|Comedy",
+        "production_year" : 2008,
+        "budget" : "$13106.39"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643c"),
+        "id" : 7,
+        "Movie_name" : "Steamboy (Suchîmubôi)",
+        " Movie_genre" : "Action|Animation|Drama|Sci-Fi",
+        "production_year" : 2009,
+        "budget" : "$12441.11"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643d"),
+        "id" : 8,
+        "Movie_name" : "It Should Happen to You",
+        " Movie_genre" : "Comedy|Romance",
+        "production_year" : 2009,
+        "budget" : "$14889.75"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643e"),
+        "id" : 9,
+        "Movie_name" : "Analyze This",
+        " Movie_genre" : "Comedy",
+        "production_year" : 2004,
+        "budget" : "$13740.74"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66441"),
+        "id" : 12,
+        "Movie_name" : "Flyboys",
+        " Movie_genre" : "Action|Adventure|Drama|War",
+        "production_year" : 2006,
+        "budget" : "$10822.70"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66442"),
+        "id" : 13,
+        "Movie_name" : "Little Thief, The (Le petit voleur)",
+        " Movie_genre" : "Drama",
+        "production_year" : 2003,
+        "budget" : "$10034.86"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66443"),
+        "id" : 14,
+        "Movie_name" : "Number Seventeen (a.k.a. Number 17)",
+        " Movie_genre" : "Thriller",
+        "production_year" : 2002,
+        "budget" : "$10725.90"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66444"),
+        "id" : 15,
+        "Movie_name" : "Galaxy Invader, The",
+        " Movie_genre" : "Sci-Fi",
+        "production_year" : 2009,
+        "budget" : "$12506.63"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66445"),
+        "id" : 16,
+        "Movie_name" : "Guess Who",
+        " Movie_genre" : "Comedy|Romance",
+        "production_year" : 2003,
+        "budget" : "$10558.75"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66446"),
+        "id" : 17,
+        "Movie_name" : "Foxes",
+        " Movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : "$13994.74"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66448"),
+        "id" : 19,
+        "Movie_name" : "A Grain of Truth",
+        " Movie_genre" : "Thriller",
+        "production_year" : 2007,
+        "budget" : "$19078.42"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6644f"),
+        "id" : 26,
+        "Movie_name" : "Live Free or Die",
+        " Movie_genre" : "Comedy|Crime",
+        "production_year" : 2001,
+        "budget" : "$15001.54"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66451"),
+        "id" : 28,
+        "Movie_name" : "How High",
+        " Movie_genre" : "Comedy",
+        "production_year" : 2011,
+        "budget" : "$11074.10"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66452"),
+        "id" : 29,
+        "Movie_name" : "Jacqueline Susann's Once Is Not Enough",
+        " Movie_genre" : "Drama|Romance",
+        "production_year" : 2009,
+        "budget" : "$17785.87"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66453"),
+        "id" : 30,
+        "Movie_name" : "Ffolkes",
+        " Movie_genre" : "Action|Adventure|Thriller",
+        "production_year" : 2004,
+        "budget" : "$17448.32"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66454"),
+        "id" : 31,
+        "Movie_name" : "Louis C.K.: Shameless",
+        " Movie_genre" : "Comedy",
+        "production_year" : 2010,
+        "budget" : "$10547.26"
+}
+Type "it" for more
+> db.users.find({$or:[{"production_year":{$gt:2000}},{"budget":{$gt:"$10000"}}]}).pretty()
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66436"),
+        "id" : 1,
+        "Movie_name" : "Last Winter, The",
+        " Movie_genre" : "Horror",
+        "production_year" : 2005,
+        "budget" : "$17114.16"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66437"),
+        "id" : 2,
+        "Movie_name" : "Yakuza, The",
+        " Movie_genre" : "Drama",
+        "production_year" : 2009,
+        "budget" : "$11577.82"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66438"),
+        "id" : 3,
+        "Movie_name" : "Emergency Squad",
+        " Movie_genre" : "Action|Thriller",
+        "production_year" : 2007,
+        "budget" : "$10406.44"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66439"),
+        "id" : 4,
+        "Movie_name" : "Coupe de Ville",
+        " Movie_genre" : "Comedy|Drama",
+        "production_year" : 1992,
+        "budget" : "$13240.52"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643a"),
+        "id" : 5,
+        "Movie_name" : "In Bed (En la cama)",
+        " Movie_genre" : "Drama",
+        "production_year" : 2001,
+        "budget" : "$10581.89"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643b"),
+        "id" : 6,
+        "Movie_name" : "Let the Bullets Fly",
+        " Movie_genre" : "Action|Comedy",
+        "production_year" : 2008,
+        "budget" : "$13106.39"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643c"),
+        "id" : 7,
+        "Movie_name" : "Steamboy (Suchîmubôi)",
+        " Movie_genre" : "Action|Animation|Drama|Sci-Fi",
+        "production_year" : 2009,
+        "budget" : "$12441.11"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643d"),
+        "id" : 8,
+        "Movie_name" : "It Should Happen to You",
+        " Movie_genre" : "Comedy|Romance",
+        "production_year" : 2009,
+        "budget" : "$14889.75"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643e"),
+        "id" : 9,
+        "Movie_name" : "Analyze This",
+        " Movie_genre" : "Comedy",
+        "production_year" : 2004,
+        "budget" : "$13740.74"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643f"),
+        "id" : 10,
+        "Movie_name" : "Clay Bird, The (Matir moina)",
+        " Movie_genre" : "Drama",
+        "production_year" : 1995,
+        "budget" : "$16009.96"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66440"),
+        "id" : 11,
+        "Movie_name" : "Adrenaline Drive (Adorenarin doraibu)",
+        " Movie_genre" : "Comedy",
+        "production_year" : 1988,
+        "budget" : "$9976.33"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66441"),
+        "id" : 12,
+        "Movie_name" : "Flyboys",
+        " Movie_genre" : "Action|Adventure|Drama|War",
+        "production_year" : 2006,
+        "budget" : "$10822.70"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66442"),
+        "id" : 13,
+        "Movie_name" : "Little Thief, The (Le petit voleur)",
+        " Movie_genre" : "Drama",
+        "production_year" : 2003,
+        "budget" : "$10034.86"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66443"),
+        "id" : 14,
+        "Movie_name" : "Number Seventeen (a.k.a. Number 17)",
+        " Movie_genre" : "Thriller",
+        "production_year" : 2002,
+        "budget" : "$10725.90"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66444"),
+        "id" : 15,
+        "Movie_name" : "Galaxy Invader, The",
+        " Movie_genre" : "Sci-Fi",
+        "production_year" : 2009,
+        "budget" : "$12506.63"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66445"),
+        "id" : 16,
+        "Movie_name" : "Guess Who",
+        " Movie_genre" : "Comedy|Romance",
+        "production_year" : 2003,
+        "budget" : "$10558.75"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66446"),
+        "id" : 17,
+        "Movie_name" : "Foxes",
+        " Movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : "$13994.74"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66447"),
+        "id" : 18,
+        "Movie_name" : "Takedown",
+        " Movie_genre" : "Action|Thriller",
+        "production_year" : 1984,
+        "budget" : "$16113.07"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66448"),
+        "id" : 19,
+        "Movie_name" : "A Grain of Truth",
+        " Movie_genre" : "Thriller",
+        "production_year" : 2007,
+        "budget" : "$19078.42"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66449"),
+        "id" : 20,
+        "Movie_name" : "Feast of Love",
+        " Movie_genre" : "Drama|Romance",
+        "production_year" : 1993,
+        "budget" : "$19870.72"
+}
+Type "it" for more
+> db.users.find({$nor:[{"production_year":{$gt:2000}},{"budget":{$gt:"$10000"}}]}).pretty()
+> db.users.find({$nor:[{"production_year":{$gt:2000}},{"budget":{$gt:"$10000"}}]}).pretty()
+> db.users.find({$or:[{"production_year":{$gt:2000}},{"budget":{$gt:"$10000"}}]}).pretty()
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66436"),
+        "id" : 1,
+        "Movie_name" : "Last Winter, The",
+        " Movie_genre" : "Horror",
+        "production_year" : 2005,
+        "budget" : "$17114.16"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66437"),
+        "id" : 2,
+        "Movie_name" : "Yakuza, The",
+        " Movie_genre" : "Drama",
+        "production_year" : 2009,
+        "budget" : "$11577.82"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66438"),
+        "id" : 3,
+        "Movie_name" : "Emergency Squad",
+        " Movie_genre" : "Action|Thriller",
+        "production_year" : 2007,
+        "budget" : "$10406.44"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66439"),
+        "id" : 4,
+        "Movie_name" : "Coupe de Ville",
+        " Movie_genre" : "Comedy|Drama",
+        "production_year" : 1992,
+        "budget" : "$13240.52"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643a"),
+        "id" : 5,
+        "Movie_name" : "In Bed (En la cama)",
+        " Movie_genre" : "Drama",
+        "production_year" : 2001,
+        "budget" : "$10581.89"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643b"),
+        "id" : 6,
+        "Movie_name" : "Let the Bullets Fly",
+        " Movie_genre" : "Action|Comedy",
+        "production_year" : 2008,
+        "budget" : "$13106.39"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643c"),
+        "id" : 7,
+        "Movie_name" : "Steamboy (Suchîmubôi)",
+        " Movie_genre" : "Action|Animation|Drama|Sci-Fi",
+        "production_year" : 2009,
+        "budget" : "$12441.11"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643d"),
+        "id" : 8,
+        "Movie_name" : "It Should Happen to You",
+        " Movie_genre" : "Comedy|Romance",
+        "production_year" : 2009,
+        "budget" : "$14889.75"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643e"),
+        "id" : 9,
+        "Movie_name" : "Analyze This",
+        " Movie_genre" : "Comedy",
+        "production_year" : 2004,
+        "budget" : "$13740.74"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643f"),
+        "id" : 10,
+        "Movie_name" : "Clay Bird, The (Matir moina)",
+        " Movie_genre" : "Drama",
+        "production_year" : 1995,
+        "budget" : "$16009.96"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66440"),
+        "id" : 11,
+        "Movie_name" : "Adrenaline Drive (Adorenarin doraibu)",
+        " Movie_genre" : "Comedy",
+        "production_year" : 1988,
+        "budget" : "$9976.33"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66441"),
+        "id" : 12,
+        "Movie_name" : "Flyboys",
+        " Movie_genre" : "Action|Adventure|Drama|War",
+        "production_year" : 2006,
+        "budget" : "$10822.70"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66442"),
+        "id" : 13,
+        "Movie_name" : "Little Thief, The (Le petit voleur)",
+        " Movie_genre" : "Drama",
+        "production_year" : 2003,
+        "budget" : "$10034.86"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66443"),
+        "id" : 14,
+        "Movie_name" : "Number Seventeen (a.k.a. Number 17)",
+        " Movie_genre" : "Thriller",
+        "production_year" : 2002,
+        "budget" : "$10725.90"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66444"),
+        "id" : 15,
+        "Movie_name" : "Galaxy Invader, The",
+        " Movie_genre" : "Sci-Fi",
+        "production_year" : 2009,
+        "budget" : "$12506.63"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66445"),
+        "id" : 16,
+        "Movie_name" : "Guess Who",
+        " Movie_genre" : "Comedy|Romance",
+        "production_year" : 2003,
+        "budget" : "$10558.75"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66446"),
+        "id" : 17,
+        "Movie_name" : "Foxes",
+        " Movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : "$13994.74"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66447"),
+        "id" : 18,
+        "Movie_name" : "Takedown",
+        " Movie_genre" : "Action|Thriller",
+        "production_year" : 1984,
+        "budget" : "$16113.07"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66448"),
+        "id" : 19,
+        "Movie_name" : "A Grain of Truth",
+        " Movie_genre" : "Thriller",
+        "production_year" : 2007,
+        "budget" : "$19078.42"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66449"),
+        "id" : 20,
+        "Movie_name" : "Feast of Love",
+        " Movie_genre" : "Drama|Romance",
+        "production_year" : 1993,
+        "budget" : "$19870.72"
+}
+Type "it" for more
+> db.users.find({$not:[{"production_year":{$gt:2000}},{"budget":{$gt:"$10000"}}]}).pretty()
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "unknown top level operator: $not. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.",
+        "code" : 2,
+        "codeName" : "BadValue"
+}
+> db.users.find({$nor:[{"production_year":{$gt:2000}},{"budget":{$gt:"$10000"}}]}).pretty()
+> db.users.find({$or:[{"production_year":{$in:2000}},{"budget":"$10000"}]}).pretty()
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "$in needs an array",
+        "code" : 2,
+        "codeName" : "BadValue"
+}
+> db.users.find({$or:[{"production_year":{$in:[2000]}},{"budget":"$10000"}]}).pretty()
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6644d"),
+        "id" : 24,
+        "Movie_name" : "Men with Guns",
+        " Movie_genre" : "Action|Drama",
+        "production_year" : 2000,
+        "budget" : "$10459.35"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66455"),
+        "id" : 32,
+        "Movie_name" : "Ketchup Effect, The (Hip Hip Hora!)",
+        " Movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : "$14883.21"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66483"),
+        "id" : 78,
+        "Movie_name" : "Land of Milk and Honey (Pays de cocagne)",
+        " Movie_genre" : "Documentary",
+        "production_year" : 2000,
+        "budget" : "$11255.15"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c664b9"),
+        "id" : 132,
+        "Movie_name" : "Profit, The",
+        " Movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : "$12440.54"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c664f3"),
+        "id" : 190,
+        "Movie_name" : "My Führer",
+        " Movie_genre" : "Comedy|Drama|War",
+        "production_year" : 2000,
+        "budget" : "$13455.85"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66510"),
+        "id" : 219,
+        "Movie_name" : "Night Falls on Manhattan",
+        " Movie_genre" : "Crime|Drama",
+        "production_year" : 2000,
+        "budget" : "$13895.07"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66520"),
+        "id" : 235,
+        "Movie_name" : "Father, The (Pedar)",
+        " Movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : "$18800.96"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6652e"),
+        "id" : 249,
+        "Movie_name" : "Creep",
+        " Movie_genre" : "Horror|Thriller",
+        "production_year" : 2000,
+        "budget" : "$13176.60"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66544"),
+        "id" : 271,
+        "Movie_name" : "Two Evil Eyes",
+        " Movie_genre" : "Horror",
+        "production_year" : 2000,
+        "budget" : "$11167.71"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6655d"),
+        "id" : 296,
+        "Movie_name" : "Motivational Growth",
+        " Movie_genre" : "Comedy|Horror",
+        "production_year" : 2000,
+        "budget" : "$13180.18"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c665c4"),
+        "id" : 399,
+        "Movie_name" : "Mississippi Burning",
+        " Movie_genre" : "Crime|Drama|Thriller",
+        "production_year" : 2000,
+        "budget" : "$17067.76"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66620"),
+        "id" : 491,
+        "Movie_name" : "Abbott and Costello in Hollywood",
+        " Movie_genre" : "Comedy",
+        "production_year" : 2000,
+        "budget" : "$11481.60"
+}
+> db.users.find({$nor:[{"production_year":{$in:[2000]}},{"budget":"$10000"}]}).pretty()
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66436"),
+        "id" : 1,
+        "Movie_name" : "Last Winter, The",
+        " Movie_genre" : "Horror",
+        "production_year" : 2005,
+        "budget" : "$17114.16"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66437"),
+        "id" : 2,
+        "Movie_name" : "Yakuza, The",
+        " Movie_genre" : "Drama",
+        "production_year" : 2009,
+        "budget" : "$11577.82"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66438"),
+        "id" : 3,
+        "Movie_name" : "Emergency Squad",
+        " Movie_genre" : "Action|Thriller",
+        "production_year" : 2007,
+        "budget" : "$10406.44"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66439"),
+        "id" : 4,
+        "Movie_name" : "Coupe de Ville",
+        " Movie_genre" : "Comedy|Drama",
+        "production_year" : 1992,
+        "budget" : "$13240.52"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643a"),
+        "id" : 5,
+        "Movie_name" : "In Bed (En la cama)",
+        " Movie_genre" : "Drama",
+        "production_year" : 2001,
+        "budget" : "$10581.89"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643b"),
+        "id" : 6,
+        "Movie_name" : "Let the Bullets Fly",
+        " Movie_genre" : "Action|Comedy",
+        "production_year" : 2008,
+        "budget" : "$13106.39"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643c"),
+        "id" : 7,
+        "Movie_name" : "Steamboy (Suchîmubôi)",
+        " Movie_genre" : "Action|Animation|Drama|Sci-Fi",
+        "production_year" : 2009,
+        "budget" : "$12441.11"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643d"),
+        "id" : 8,
+        "Movie_name" : "It Should Happen to You",
+        " Movie_genre" : "Comedy|Romance",
+        "production_year" : 2009,
+        "budget" : "$14889.75"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643e"),
+        "id" : 9,
+        "Movie_name" : "Analyze This",
+        " Movie_genre" : "Comedy",
+        "production_year" : 2004,
+        "budget" : "$13740.74"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643f"),
+        "id" : 10,
+        "Movie_name" : "Clay Bird, The (Matir moina)",
+        " Movie_genre" : "Drama",
+        "production_year" : 1995,
+        "budget" : "$16009.96"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66440"),
+        "id" : 11,
+        "Movie_name" : "Adrenaline Drive (Adorenarin doraibu)",
+        " Movie_genre" : "Comedy",
+        "production_year" : 1988,
+        "budget" : "$9976.33"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66441"),
+        "id" : 12,
+        "Movie_name" : "Flyboys",
+        " Movie_genre" : "Action|Adventure|Drama|War",
+        "production_year" : 2006,
+        "budget" : "$10822.70"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66442"),
+        "id" : 13,
+        "Movie_name" : "Little Thief, The (Le petit voleur)",
+        " Movie_genre" : "Drama",
+        "production_year" : 2003,
+        "budget" : "$10034.86"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66443"),
+        "id" : 14,
+        "Movie_name" : "Number Seventeen (a.k.a. Number 17)",
+        " Movie_genre" : "Thriller",
+        "production_year" : 2002,
+        "budget" : "$10725.90"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66444"),
+        "id" : 15,
+        "Movie_name" : "Galaxy Invader, The",
+        " Movie_genre" : "Sci-Fi",
+        "production_year" : 2009,
+        "budget" : "$12506.63"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66445"),
+        "id" : 16,
+        "Movie_name" : "Guess Who",
+        " Movie_genre" : "Comedy|Romance",
+        "production_year" : 2003,
+        "budget" : "$10558.75"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66446"),
+        "id" : 17,
+        "Movie_name" : "Foxes",
+        " Movie_genre" : "Drama",
+        "production_year" : 2011,
+        "budget" : "$13994.74"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66447"),
+        "id" : 18,
+        "Movie_name" : "Takedown",
+        " Movie_genre" : "Action|Thriller",
+        "production_year" : 1984,
+        "budget" : "$16113.07"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66448"),
+        "id" : 19,
+        "Movie_name" : "A Grain of Truth",
+        " Movie_genre" : "Thriller",
+        "production_year" : 2007,
+        "budget" : "$19078.42"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66449"),
+        "id" : 20,
+        "Movie_name" : "Feast of Love",
+        " Movie_genre" : "Drama|Romance",
+        "production_year" : 1993,
+        "budget" : "$19870.72"
+}
+Type "it" for more
+> db.users.find({$nor:[{"production_year":{$gt:2000}},{"production_year":{$lt:2010}}]}).pretty()
+> db.users.find({$and:[{"production_year":{$gt:2000}},{"production_year":{$lt:2010}}]}).pretty()
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66436"),
+        "id" : 1,
+        "Movie_name" : "Last Winter, The",
+        " Movie_genre" : "Horror",
+        "production_year" : 2005,
+        "budget" : "$17114.16"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66437"),
+        "id" : 2,
+        "Movie_name" : "Yakuza, The",
+        " Movie_genre" : "Drama",
+        "production_year" : 2009,
+        "budget" : "$11577.82"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66438"),
+        "id" : 3,
+        "Movie_name" : "Emergency Squad",
+        " Movie_genre" : "Action|Thriller",
+        "production_year" : 2007,
+        "budget" : "$10406.44"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643a"),
+        "id" : 5,
+        "Movie_name" : "In Bed (En la cama)",
+        " Movie_genre" : "Drama",
+        "production_year" : 2001,
+        "budget" : "$10581.89"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643b"),
+        "id" : 6,
+        "Movie_name" : "Let the Bullets Fly",
+        " Movie_genre" : "Action|Comedy",
+        "production_year" : 2008,
+        "budget" : "$13106.39"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643c"),
+        "id" : 7,
+        "Movie_name" : "Steamboy (Suchîmubôi)",
+        " Movie_genre" : "Action|Animation|Drama|Sci-Fi",
+        "production_year" : 2009,
+        "budget" : "$12441.11"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643d"),
+        "id" : 8,
+        "Movie_name" : "It Should Happen to You",
+        " Movie_genre" : "Comedy|Romance",
+        "production_year" : 2009,
+        "budget" : "$14889.75"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6643e"),
+        "id" : 9,
+        "Movie_name" : "Analyze This",
+        " Movie_genre" : "Comedy",
+        "production_year" : 2004,
+        "budget" : "$13740.74"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66441"),
+        "id" : 12,
+        "Movie_name" : "Flyboys",
+        " Movie_genre" : "Action|Adventure|Drama|War",
+        "production_year" : 2006,
+        "budget" : "$10822.70"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66442"),
+        "id" : 13,
+        "Movie_name" : "Little Thief, The (Le petit voleur)",
+        " Movie_genre" : "Drama",
+        "production_year" : 2003,
+        "budget" : "$10034.86"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66443"),
+        "id" : 14,
+        "Movie_name" : "Number Seventeen (a.k.a. Number 17)",
+        " Movie_genre" : "Thriller",
+        "production_year" : 2002,
+        "budget" : "$10725.90"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66444"),
+        "id" : 15,
+        "Movie_name" : "Galaxy Invader, The",
+        " Movie_genre" : "Sci-Fi",
+        "production_year" : 2009,
+        "budget" : "$12506.63"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66445"),
+        "id" : 16,
+        "Movie_name" : "Guess Who",
+        " Movie_genre" : "Comedy|Romance",
+        "production_year" : 2003,
+        "budget" : "$10558.75"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66448"),
+        "id" : 19,
+        "Movie_name" : "A Grain of Truth",
+        " Movie_genre" : "Thriller",
+        "production_year" : 2007,
+        "budget" : "$19078.42"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6644f"),
+        "id" : 26,
+        "Movie_name" : "Live Free or Die",
+        " Movie_genre" : "Comedy|Crime",
+        "production_year" : 2001,
+        "budget" : "$15001.54"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66452"),
+        "id" : 29,
+        "Movie_name" : "Jacqueline Susann's Once Is Not Enough",
+        " Movie_genre" : "Drama|Romance",
+        "production_year" : 2009,
+        "budget" : "$17785.87"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66453"),
+        "id" : 30,
+        "Movie_name" : "Ffolkes",
+        " Movie_genre" : "Action|Adventure|Thriller",
+        "production_year" : 2004,
+        "budget" : "$17448.32"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66456"),
+        "id" : 33,
+        "Movie_name" : "Mirror, The (Ayneh)",
+        " Movie_genre" : "Drama",
+        "production_year" : 2001,
+        "budget" : "$11907.79"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66459"),
+        "id" : 36,
+        "Movie_name" : "Sex Galaxy",
+        " Movie_genre" : "Comedy|Sci-Fi",
+        "production_year" : 2006,
+        "budget" : "$11298.82"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6645b"),
+        "id" : 38,
+        "Movie_name" : "Yellow Handkerchief, The",
+        " Movie_genre" : "Drama|Romance",
+        "production_year" : 2004,
+        "budget" : "$15608.02"
+}
+Type "it" for more
+> db.users.find({}).sort({"production_year":-1,"Movie_name":-1}).pretty()
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66518"),
+        "id" : 227,
+        "Movie_name" : "Through a Glass Darkly (Såsom i en spegel)",
+        " Movie_genre" : "Drama",
+        "production_year" : 2013,
+        "budget" : "$14794.50"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66595"),
+        "id" : 352,
+        "Movie_name" : "Dream Home (Wai dor lei ah yut ho)",
+        " Movie_genre" : "Horror",
+        "production_year" : 2013,
+        "budget" : "$12774.46"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c664e7"),
+        "id" : 178,
+        "Movie_name" : "Dragonwyck",
+        " Movie_genre" : "Drama|Mystery|Thriller",
+        "production_year" : 2013,
+        "budget" : "$11282.61"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66566"),
+        "id" : 305,
+        "Movie_name" : "Blondie on a Budget",
+        " Movie_genre" : "Comedy",
+        "production_year" : 2013,
+        "budget" : "$18549.81"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66495"),
+        "id" : 96,
+        "Movie_name" : "Yossi & Jagger",
+        " Movie_genre" : "Drama|Romance",
+        "production_year" : 2012,
+        "budget" : "$17590.34"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66605"),
+        "id" : 464,
+        "Movie_name" : "Vic+Flo Saw a Bear",
+        " Movie_genre" : "Crime|Drama|Thriller",
+        "production_year" : 2012,
+        "budget" : "$12606.51"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66615"),
+        "id" : 480,
+        "Movie_name" : "That's Life!",
+        " Movie_genre" : "Drama",
+        "production_year" : 2012,
+        "budget" : "$12046.75"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66523"),
+        "id" : 238,
+        "Movie_name" : "Smart People",
+        " Movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2012,
+        "budget" : "$9408.06"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66621"),
+        "id" : 492,
+        "Movie_name" : "Singer, The (Quand j'étais chanteur)",
+        " Movie_genre" : "Drama|Romance",
+        "production_year" : 2012,
+        "budget" : "$13439.64"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66532"),
+        "id" : 253,
+        "Movie_name" : "Program, The",
+        " Movie_genre" : "Action|Drama",
+        "production_year" : 2012,
+        "budget" : "$12398.04"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c664c5"),
+        "id" : 144,
+        "Movie_name" : "Pariah",
+        " Movie_genre" : "Drama",
+        "production_year" : 2012,
+        "budget" : "$18199.05"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c665b9"),
+        "id" : 388,
+        "Movie_name" : "Kumiko, the Treasure Hunter",
+        " Movie_genre" : "Comedy|Drama",
+        "production_year" : 2012,
+        "budget" : "$19670.52"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66487"),
+        "id" : 82,
+        "Movie_name" : "Kafka",
+        " Movie_genre" : "Comedy|Drama|Mystery|Sci-Fi|Thriller",
+        "production_year" : 2012,
+        "budget" : "$17510.50"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c664f4"),
+        "id" : 191,
+        "Movie_name" : "Inauguration of the Pleasure Dome",
+        " Movie_genre" : "Fantasy",
+        "production_year" : 2012,
+        "budget" : "$19014.64"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66589"),
+        "id" : 340,
+        "Movie_name" : "Golden Coach, The (Le carrosse d'or)",
+        " Movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2012,
+        "budget" : "$14071.29"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c664a2"),
+        "id" : 109,
+        "Movie_name" : "Fall of the House of Usher, The (chute de la maison Usher, La)",
+        " Movie_genre" : "Drama|Horror",
+        "production_year" : 2012,
+        "budget" : "$14346.03"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66555"),
+        "id" : 288,
+        "Movie_name" : "Country Bears, The",
+        " Movie_genre" : "Children|Comedy",
+        "production_year" : 2012,
+        "budget" : "$11661.02"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6647a"),
+        "id" : 69,
+        "Movie_name" : "Children of Noisy Village, The (a.k.a Children of Bullerby Village, The) (Alla vi barn i Bullerbyn)",
+        " Movie_genre" : "Children",
+        "production_year" : 2012,
+        "budget" : "$13741.07"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66557"),
+        "id" : 290,
+        "Movie_name" : "Borgman",
+        " Movie_genre" : "Thriller",
+        "production_year" : 2012,
+        "budget" : "$9127.58"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c6653e"),
+        "id" : 265,
+        "Movie_name" : "Big Stampede, The",
+        " Movie_genre" : "Western",
+        "production_year" : 2012,
+        "budget" : "$19880.93"
+}
+Type "it" for more
+> db.users.find({}).skip(10).limit(5).pretty()
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66440"),
+        "id" : 11,
+        "Movie_name" : "Adrenaline Drive (Adorenarin doraibu)",
+        " Movie_genre" : "Comedy",
+        "production_year" : 1988,
+        "budget" : "$9976.33"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66441"),
+        "id" : 12,
+        "Movie_name" : "Flyboys",
+        " Movie_genre" : "Action|Adventure|Drama|War",
+        "production_year" : 2006,
+        "budget" : "$10822.70"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66442"),
+        "id" : 13,
+        "Movie_name" : "Little Thief, The (Le petit voleur)",
+        " Movie_genre" : "Drama",
+        "production_year" : 2003,
+        "budget" : "$10034.86"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66443"),
+        "id" : 14,
+        "Movie_name" : "Number Seventeen (a.k.a. Number 17)",
+        " Movie_genre" : "Thriller",
+        "production_year" : 2002,
+        "budget" : "$10725.90"
+}
+{
+        "_id" : ObjectId("622908df6a6f3c4cd0c66444"),
+        "id" : 15,
+        "Movie_name" : "Galaxy Invader, The",
+        " Movie_genre" : "Sci-Fi",
+        "production_year" : 2009,
+        "budget" : "$12506.63"
+}
